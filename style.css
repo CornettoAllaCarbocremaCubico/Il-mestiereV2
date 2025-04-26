@@ -1,13 +1,14 @@
 body{font-family: Arial, Helvetica, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;}
 header{text-align: center;}
 main{padding: 20px;}
+footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center; 
+    gap: 20px;  
     padding: 20px;
+    justify-content: center;
   }
 
 .grid1 {
@@ -19,13 +20,11 @@ main{padding: 20px;}
   }
 
 .bottone {
-    width: 200px;
-    height: 60px;
+    width: 100px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ccc;
-    border-radius: 10px;
     font-size: 18px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -50,22 +49,22 @@ main{padding: 20px;}
   
 .bottone:nth-child(1):hover a {
     background-color: #862525;
-    color: #000;
+    color: white
   }
   
 .bottone:nth-child(2):hover a {
     background-color: #472586;
-    color: #000;
+    color: white;
   }
   
 .bottone:nth-child(3):hover a {
     background-color: #c0b62a;
-    color: #000;
+    color: white;
   }
   
 .bottone:nth-child(4):hover a {
     background-color: #12ab33;
-    color: #000;
+    color: white;
   }
   
 .img-res{width: 100%; height:auto}
@@ -101,7 +100,7 @@ main{padding: 20px;}
  .col33{
     width: 33%;
     background-color: white;
-    border: solid black 2px;
+    border: solid rgb(205, 200, 200) 2px;
     color: #000;
  }
 
@@ -119,3 +118,29 @@ main{padding: 20px;}
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
   
+  .footercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footercol33 {
+    flex: 1 1 250px; /* più flessibile per schermi piccoli */
+    max-width: 33%;
+    box-sizing: border-box;
+  }
+  
+  .footerblock {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footerblock:hover {
+    background-color: #454040;
+  }
