@@ -9,6 +9,16 @@ footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
     gap: 20px;  
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
+  }
+
+.grid-corsi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+    justify-content: center;
+    align-items: center;
+    
   }
 
 .grid1 {
@@ -184,14 +194,21 @@ footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
   }
   
   .col33-corsi {
-    width: 33%;
+    width: 32%;
     background-color: white;
-    border: solid rgb(205, 200, 200) 2px;
     color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: all 0.3s ease;
+
+  }
+
+
+  .col33-corsi:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
 .cover-content-corsi {
@@ -205,4 +222,8 @@ footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
   align-items: flex-end;   
   text-align: center;
   font-size: 50px;
+  background: #000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.01) 100%);
+  pointer-events: none;
+
 }
