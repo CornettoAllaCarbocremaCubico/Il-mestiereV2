@@ -29,7 +29,6 @@ footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
     justify-content: center; 
     align-items: center;
     padding-bottom: 10px;
-    background: linear-gradient(to right, #8d82c2, #7a6fb6); /* Sfumatura viola */
     padding: 20px;
     border-radius: 10px;
   }
@@ -250,11 +249,10 @@ footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
     font-size: 36px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.01) 80%);
     pointer-events: none;
-    /* Posizione iniziale del testo fuori schermo */
     transform: translateY(100%); 
     transition: transform 0.3s ease;
 }
-/* Fa scorrere il testo dal basso */
+
 .cover:hover .cover-content-corsi {
   transform: translateY(0); 
 }
