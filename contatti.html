@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scuola di musica V1</title>
+    <title>Contatti - Scuola di Musica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header class="grid">
         <div class="container2terzi">
             <div class="col33">
-                <div class = "boxcol">
+                <div class="boxcol">
                     <img src="immagini-html/telefono.png" class="img-res-1">
                     <p>333 3333 333</p>
                 </div>
@@ -36,83 +36,73 @@
             <div class="col33">
                 <img src="immagini-html/insta.png" class="img-res-1">
             </div>
-            
             <div class="col33">
                 <img src="immagini-html/facebook.png" class="img-res-1">
             </div>
-            
             <div class="col33">
                 <img src="immagini-html/yt.png" class="img-res-1">
             </div>
         </div>
-
     </header>
 
     <div class="grid1">
-        <img src="immagini-html/logo.avif" alt="">
+        <img src="immagini-html/logo.avif" alt="Logo scuola di musica">
         <div class="grid">
-            <div class="bottone">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="bottone">
-                <a href="corsi.html">Corsi</a>
-            </div>
-            <div class="bottone">
-                <a href="staff.html">Staff</a>
-            </div>
-            <div class="bottone">
-                <a href="contatti.html">Laboratori</a>
-            </div>
+            <div class="bottone"><a href="index.html">Home</a></div>
+            <div class="bottone"><a href="corsi.html">Corsi</a></div>
+            <div class="bottone"><a href="staff.html">Staff</a></div>
+            <div class="bottone"><a href="contatti.html">Contatti</a></div>
         </div>
     </div>
-    
 
     <main>
+        <div class="contatti-section">
+            <h2>Contattaci</h2>
+            <div class="contatti-container">
+                <div class="form-box">
+                    <form action="#" method="post">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
 
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+
+                        <button type="submit">Invia</button>
+                    </form>
+                </div>
+                <div class="mappa-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.171152389712!2d9.369754215826706!3d45.61734487910108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b8c81b098b3f%3A0xf02f2a3ed4ac3e0b!2sVia%20Adda%2C%206%2C%2020871%20Vimercate%20MB!5e0!3m2!1sit!2sit!4v1714920000000" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </main>
 
-
     <footer>
-
         <div class="footercontainer">
-
             <div class="footercol33">
-
-                <div class="footerblocktitle">
-                    <p>Telefono Segreteria</p>
-                </div>
-
+                <div class="footerblocktitle"><p>Telefono Segreteria</p></div>
+                <div class="footerblock"><p>+39 333 3333 333</p></div>
+            </div>
+            <div class="footercol33">
+                <div class="footerblocktitle"><p>Dove ci troviamo?</p></div>
+                <div class="footerblock"><p>Via Adda, 6 – Vimercate (MB) – 20871</p></div>
+            </div>
+            <div class="footercol33">
                 <div class="footerblock">
-                    <p>+39 333 3333 333</p>
+                    <p>“Se non studio un giorno, me ne accorgo io. Se non studio due giorni, se ne accorge il pubblico.” – Niccolò Paganini</p>
                 </div>
             </div>
-
-            <div class="footercol33">
-
-                <div class="footerblocktitle">
-                    <p>Dove ci troviamo?</p>
-                </div>
-
-                <div class=" footerblock">
-                    <p>Piazza Marconi - Vimercate (MB) - 20871 </p>
-                </div>
-
-            </div>
-
-            <div class="footercol33">
-
-                <div class="footerblock">
-                    <p>“Se non studio un giorno, me ne accorgo io. Se non studio due giorni, se ne accorge il pubblico.” - Niccolò Paganini</p>
-                </div>
-
-            </div>
-
         </div>
-
         <div class="bottomcontainer">
             <p>P. Iva - 3192932'423047221</p>
         </div>
-
     </footer>
 
 </body>
+</html>
