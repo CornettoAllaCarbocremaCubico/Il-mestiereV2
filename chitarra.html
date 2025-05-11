@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corso di Chitarra - Scuola di Musica</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="grid">
+        <div class="container2terzi">
+            <div class="col33">
+                <div class="boxcol">
+                    <img src="immagini-html/telefono.png" class="img-res-1" alt="Telefono" />
+                    <p>333 3333 333</p>
+                </div>
+            </div>
+            <div class="col33">
+                <div class="boxcol">
+                    <img src="immagini-html/gmail.png" class="img-res-1" alt="Email" />
+                    <p>scuola.01@gmail.com</p>
+                </div>
+            </div>
+            <div class="col33">
+                <div class="boxcol">
+                    <img src="immagini-html/whatsapp.png" class="img-res-1" alt="Whatsapp" />
+                    <p>348 9929 007</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1terzo">
+            <div class="col33"><img src="immagini-html/insta.png" class="img-res-1" alt="Instagram" /></div>
+            <div class="col33"><img src="immagini-html/facebook.png" class="img-res-1" alt="Facebook" /></div>
+            <div class="col33"><img src="immagini-html/yt.png" class="img-res-1" alt="YouTube" /></div>
+        </div>
+    </header>
+
+    <div class="grid1">
+        <img src="immagini-html/logo.avif" alt="Logo scuola di musica" />
+        <div class="grid">
+            <div class="bottone"><a href="index.html">Home</a></div>
+            <div class="bottone"><a href="corsi.html">Corsi</a></div>
+            <div class="bottone"><a href="staff.html">Staff</a></div>
+            <div class="bottone"><a href="contatti.html">Contatti</a></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero-corsi">
+            <h1>Corso di Chitarra</h1>
+            <p class="intro-text">Scopri come suonare la chitarra acustica, elettrica e classica con i nostri insegnanti
+                esperti.</p>
+        </section>
+
+        <section class="contenuto-corso">
+            <div class="img-corso-wrapper">
+                <img src="immagini-html/frusciantechitarra.jpg" alt="Corso di Chitarra" class="img-res-corso-singolo" />
+            </div>
+            <div class="testo-corso-wrapper">
+                <h2>Cosa imparerai</h2>
+                <ul>
+                    <li>Accordi, scale e arpeggi fondamentali</li>
+                    <li>Tecniche moderne e fingerstyle</li>
+                    <li>Improvvisazione e teoria musicale</li>
+                    <li>Repertorio rock, blues, pop e jazz</li>
+                </ul>
+            </div>
+        </section>
+        <section class="iscrizione-corso">
+            <h2>Iscriviti al Corso di Chitarra</h2>
+            <p>Compila il modulo per prenotare la tua lezione di prova gratuita o per ricevere maggiori informazioni.
+            </p>
+
+            <form class="form-iscrizione" action="mailto:scuola.01@gmail.com" method="POST" enctype="text/plain">
+                <label for="nome">Nome e Cognome</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" required />
+
+                <label for="messaggio">Messaggio (facoltativo)</label>
+                <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+
+                <button type="submit">Invia Richiesta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footercontainer">
+            <div class="footercol33">
+                <div class="footerblocktitle">
+                    <p>Telefono Segreteria</p>
+                </div>
+                <div class="footerblock">
+                    <p>+39 333 3333 333</p>
+                </div>
+            </div>
+            <div class="footercol33">
+                <div class="footerblocktitle">
+                    <p>Dove ci troviamo?</p>
+                </div>
+                <div class="footerblock">
+                    <p>Piazza Marconi - Vimercate (MB) - 20871 </p>
+                </div>
+            </div>
+            <div class="footercol33">
+                <div class="footerblocktitle">
+                    <p>Aforisma</p>
+                </div>
+                <div class="footerblock">
+                    <p>“Se non studio un giorno, me ne accorgo io. Se non studio due giorni, se ne accorge il pubblico.”
+                        Niccolò Paganini</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottomcontainer">
+            <p>P. Iva - 3192932'423047221</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
