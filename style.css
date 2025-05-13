@@ -300,6 +300,8 @@ footer{background-color: #000; color: #ccc; height: 250px; padding-top: 80px;}
   border-top: 4px solid #862525;
 }
 
+
+
 .contatti-section h2 {
   font-size: 2em;
   margin-bottom: 30px;
@@ -394,59 +396,54 @@ form button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  
   gap: 30px;
-  padding: 0 20px 40px 20px;
+  padding-left: 50px;
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
+  justify-items: center; 
 }
 
 .card-corso {
-  background-color: white;
-  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin: 10px;
 }
 
 .card-corso:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transform: scale(1.03);
 }
 
 .card-corso img {
   width: 100%;
-  height: 180px;         
-  object-fit: cover;     
-  border-bottom: 1px solid #ddd;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 
-.card-content {
-  padding: 15px;
-  text-align: center;
-  background-color: #f9f9f9;
-  position: relative;
-}
-
-.card-icon {
-  width: 40px;
-  height: auto;
+.corso-nome {
   position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  padding: 5px;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  background-color: #862525;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  transition: bottom 0.3s ease;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.card-content h3 {
-  margin-top: 30px;
-  font-size: 1.5em;
-  color: #862525;
+.card-corso:hover .corso-nome {
+  bottom: 0;
 }
-
-
-
 
 .contenuto-corso {
   display: flex;
@@ -547,4 +544,89 @@ form button:hover {
 }
 
 
+@media (max-width: 768px) {
+  header, main, footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .grid, .grid-corsi, .grid1, .container2terzi, .contatti-container, .boxcol, .contenuto-corso {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .bottone {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card-corso, .col33-corsi, .col33, .container1terzo, .container2terzi {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .footercontainer, .bottomcontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footercol33 {
+    max-width: 100%;
+  }
+
+  .gallery-corsi {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-content {
+    font-size: 28px;
+    padding: 20px;
+  }
+
+  .img-res-corsi,
+  .img-res-staff,
+  .img-res,
+  .img-corso-wrapper,
+  .img-res-corso-singolo {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .form-box,
+  .mappa-box {
+    width: 100% !important;
+  }
+
+  .descrizione {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .descrizione-testo {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .form-iscrizione {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .cover-video {
+    height: auto;
+  }
+
+  .card-content h3 {
+    font-size: 1.3em;
+  }
+
+  .hero-corsi h1 {
+    font-size: 2em;
+  }
+
+  .intro-text {
+    font-size: 1em;
+  }
+}
 
